@@ -1,7 +1,17 @@
-.grid {
+/* .grid {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3vw;
+} */
+
+
+/* used repeat function */
+
+.grid {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 3vw;
 }
 
