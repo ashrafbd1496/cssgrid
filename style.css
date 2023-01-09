@@ -2,7 +2,7 @@ body {
     display: grid;
     /* grid-template-areas: "header header header" "nav article ads" "footer footer footer"; */
     grid-template-areas: "nav header header" "nav article ads" "nav footer ads";
-    grid-template-rows: 60px 1fr 60px;
+    grid-template-rows: 20% 1fr 20%;
     grid-template-columns: 20% 1fr 15%;
     grid-gap: 10px;
     height: 100vh;
@@ -37,6 +37,9 @@ div {
 #siteAds {
     grid-area: ads;
 }
+
+
+/* autofill grid */
 
 
 /* .grid {
