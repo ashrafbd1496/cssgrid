@@ -1,0 +1,39 @@
+<!doctype html>
+<title>Grid inside Grid</title>
+<style>
+    #outer-grid {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 8px;
+    }
+    
+    #outer-grid>div {
+        background-color: limegreen;
+        color: white;
+        font-size: 4vw;
+        padding: 8px;
+    }
+    
+    #inner-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+    }
+    
+    #inner-grid>div {
+        background: lightgreen;
+        padding: 8px;
+    }
+</style>
+<div id="outer-grid">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div id="inner-grid">
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+</div>
