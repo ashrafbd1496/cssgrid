@@ -1,0 +1,43 @@
+<!doctype html>
+<title>Example</title>
+<style>
+    #grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 100vh;
+        grid-gap: 10px;
+        place-items: end center;
+        background-color: beige;
+    }
+    
+    #grid>div {
+        padding: 20px;
+        font-size: 4vw;
+        color: white;
+    }
+    
+    .red {
+        background: orangered;
+        height: 40%;
+    }
+    
+    .green {
+        background: yellowgreen;
+        height: 60%;
+    }
+    
+    .blue {
+        background: steelblue;
+        height: auto;
+    }
+    
+    body {
+        margin: 0;
+    }
+</style>
+
+<div id="grid">
+    <div class="red">1</div>
+    <div class="green">2</div>
+    <div class="blue">3</div>
+</div>

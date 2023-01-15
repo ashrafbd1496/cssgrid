@@ -1,0 +1,45 @@
+<!doctype html>
+<title>Example</title>
+<style>
+    #grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: 90vh;
+        background-color: beige;
+    }
+    
+    .red {
+        background: orangered;
+        position: relative;
+        left: -20vw;
+        top: 20vh;
+        order: 2;
+    }
+    
+    .green {
+        background: yellowgreen;
+        position: relative;
+        left: -40vw;
+        top: 5vh;
+        order: 3;
+    }
+    
+    .blue {
+        background: steelblue;
+        top: 5vh;
+        order: 1;
+    }
+    
+    #grid>div {
+        padding: 20px;
+        font-size: 4vw;
+        color: white;
+    }
+</style>
+
+<div id="grid">
+    <div class="red">1</div>
+    <div class="green">2</div>
+    <div class="blue">3</div>
+</div>
