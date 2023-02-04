@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Css by codeinnovior</title>
+    <style>
+        .grid {
+            display: grid;
+            gap: 20px;
+            /* grid-template-columns: repeat(4, 1fr); */
+            /* grid-template-columns: repeat(3, 2fr 1fr); */
+            /* grid-template-columns: repeat(5, 1fr); */
+            grid-template-columns: repeat(3, 1fr);
+            /* to set grid height  */
+            /* grid-auto-rows: 100px; */
+            /* to make the height as content */
+            grid-auto-rows: minmax(100px, auto);
+        }
+        /* we can set different color for children using :nth-child(odd) */
+        
+        .grid>div:nth-child(odd) {
+            background-color: #c78753;
+        }
+        
+        .item {
+            background-color: #FC7300;
+            padding: 10px;
+            color: white;
+        }
+        
+        .nested-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            grid-auto-rows: 70px;
+        }
+        
+        .nested-item {
+            border: 1px solid white;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quisquam modi deleniti.
+        </div>
+        <div class="item">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quisquam modi deleniti. </p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quisquam modi deleniti.
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quisquam modi deleniti.</p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quisquam modi deleniti.</p>
+        </div>
+        <div class="nested-grid item">
+            <div class="nested-item">Lorem ipsum dolor sit amet.</div>
+            <div class="nested-item">Lorem ipsum dolor sit amet.</div>
+            <div class="nested-item">Lorem ipsum dolor sit amet.</div>
+            <div class="nested-item">Lorem ipsum dolor sit amet.</div>
+            <div class="nested-item">Lorem ipsum dolor sit amet.</div>
+            <div class="nested-item">Lorem ipsum dolor sit amet.</div>
+            <div class="nested-item">Lorem ipsum dolor sit amet.</div>
+            <div class="nested-item">Lorem ipsum dolor sit amet.</div>
+            <div class="nested-item">Lorem ipsum dolor sit amet.</div>
+            <div class="nested-item">Lorem ipsum dolor sit amet.</div>
+            <div class="nested-item">Lorem ipsum dolor sit amet.</div>
+
+        </div>
+        <div class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quisquam modi deleniti.
+        </div>
+        <div class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quisquam modi deleniti.
+        </div>
+        <div class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quisquam modi deleniti.
+        </div>
+        <div class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quisquam modi deleniti.
+        </div>
+    </div>
+</body>
+
+</html>
